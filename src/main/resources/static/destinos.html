@@ -1,0 +1,524 @@
+<header class="destinos-header">
+  <div class="container">
+    <h1><br /><br />Nuestros Destinos</h1>
+    <p class="subtitle">
+      Conectamos las principales ciudades del Perú con confort y seguridad
+    </p>
+  </div>
+</header>
+
+<main class="destinos-container">
+  <div class="container">
+    <div class="search-filter">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar destino..." />
+      </div>
+      <div class="filter-toggle">
+        <button id="filter-btn"><i class="fas fa-filter"></i> Filtros</button>
+      </div>
+    </div>
+
+    <div class="filter-options" id="filter-options">
+      <div class="filter-group">
+        <h3>Región</h3>
+        <select>
+          <option value="all">Todas las regiones</option>
+          <option value="norte">Norte</option>
+          <option value="sur">Sur</option>
+          <option value="centro">Centro</option>
+          <option value="oriente">Oriente</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <h3>Servicios</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" checked /> Ejecutivo</label>
+          <label><input type="checkbox" checked /> Económico</label>
+          <label><input type="checkbox" checked /> Nocturno</label>
+        </div>
+      </div>
+      <button class="apply-filters">Aplicar Filtros</button>
+    </div>
+
+    <div class="destinos-grid">
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1582972236019-ea9eaf0f6a8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Abancay</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 12 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 80.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 4</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1581779166116-3684c0834b8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Arequipa</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 15 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 120.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 8</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586116104126-7b8aca397815?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Ayacucho</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 9 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 70.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 5</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1582979517185-c900e0a7694b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Camaná</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 14 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 110.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 3</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586117334206-9a5dc5b898e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Chepén</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 10 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 90.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 4</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586117334206-9a5dc5b898e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Chimbote</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 8 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 65.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 6</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586117334206-9a5dc5b898e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Chala</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 13 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 100.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 2</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586117334206-9a5dc5b898e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Chiclayo</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 11 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 85.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 7</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1582972236019-ea9eaf0f6a8e?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Cusco</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 21 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 150.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 6</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1582979517185-c900e0a7694b?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Puno</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 18 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 130.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 5</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586116104126-7b8aca397815?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Trujillo</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 10 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 95.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 7</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586117334206-9a5dc5b898e1?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Iquitos</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 24 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 200.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 2</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1581779166116-3684c0834b8a?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Huancayo</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 7 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 60.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 6</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1582972236019-ea9eaf0f6a8e?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Piura</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 16 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 110.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 4</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1582979517185-c900e0a7694b?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Tarapoto</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 20 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 140.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 3</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586116104126-7b8aca397815?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Chiclayo</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 13 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 100.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 5</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1614461491460-4aa0c679f41f?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Tumbes</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 20 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 160.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 3</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1601275997495-fb00ef9c2299?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Ayacucho</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 9 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 80.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 4</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1583080538414-2d0c87de29c4?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Moquegua</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 19 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 145.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 2</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1626216172500-b476d6f74958?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Puerto Maldonado</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 22 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 170.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 2</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1587223558496-4cc14f1fba70?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Huaraz</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 8 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 70.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 5</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1612874741887-7388ce7cb0fa?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Oxapampa</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 10 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 85.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 3</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1596402181868-402b7c5ff3ee?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>Huánuco</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 9 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 75.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 4</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <div
+          class="destino-image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1615797027837-99b41d9c07db?auto=format&fit=crop&w=1350&q=80');
+          "
+        >
+          <div class="image-overlay"></div>
+          <h2>La Merced</h2>
+        </div>
+        <div class="destino-info">
+          <p><i class="fas fa-clock"></i> Duración promedio: 8 horas</p>
+          <p><i class="fas fa-money-bill-wave"></i> Desde: S/ 65.00</p>
+          <p><i class="fas fa-bus"></i> Salidas diarias: 4</p>
+          <button class="ver-terminales-btn">
+            Ver terminales <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src=" ./js/destinos.js"></script>
