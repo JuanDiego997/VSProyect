@@ -1,0 +1,263 @@
+<header>
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</header>
+<body>
+  <nav th:replace="~{fragments/layout :: nav}"></nav>
+  <main>
+    <div
+      class="back d-flex align-items-start justify-content-center justify-content-md-start p-3 p-md-5"
+    >
+      <div class="hero-content text-center text-md-start mx-auto mx-md-0">
+        <span
+          class="fs-6 text-white bg-danger px-3 px-md-4 py-1 py-md-2 rounded-pill fw-bold"
+        >
+          Viaja con comodidad
+        </span>
+        <h2 class="display-4 fw-bold text-black pt-2 mb-3">
+          Los mejores destinos <br class="d-none d-sm-block" />
+          turísticos del Perú
+        </h2>
+        <p class="fw-bold fs-4 fs-md-3 pt-1 pb-3">
+          Vive experiencias únicas con VSP Tours
+        </p>
+        <button class="btn btn-primary px-3 px-md-4 py-2 rounded-lg fw-bold">
+          <a href="#destinos" class="text-white text-decoration-none"
+            >Explorar Destinos</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <section class="py-5 bg-gradient" id="carrusel">
+      <div class="container">
+        <h1
+          class="mt-5 fw-bold text-center mb-4 text-uppercase"
+          style="color: #4175fc"
+        >
+          <i class="fas fa-map-marked-alt me-2"></i>
+          ¡Explora Nuestros Destinos Más Populares!
+          <i class="fas bi-bus-front ms-2"></i>
+          <br />
+          <span class="fs-5 text-muted">
+            🌟 Vive experiencias inolvidables en cada rincón del Perú y el mundo
+            🌎
+          </span>
+        </h1>
+
+        <div
+          id="carouselDestinos"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner rounded-4 shadow-lg overflow-hidden">
+            <div class="carousel-item active">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/images/pozuzocarruselinicio.jpg"
+                  class="d-block w-100 object-fit-cover"
+                  alt="Machu Picchu"
+                />
+              </div>
+              <div class="carousel-caption bg-dark bg-opacity-50 rounded-3 p-3">
+                <h5 class="text-light fw-bold fs-4">Pozuzo y colonias</h5>
+                <p class="text-light fs-6">
+                  Explora la maravilla del mundo con guías expertos y todo
+                  incluido.
+                </p>
+                <a href="#destinos" class="btn btn-light btn-sm"
+                  >Descubre Más</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/images/pexels-willianjusten-22484279.jpg"
+                  class="d-block w-100 object-fit-cover"
+                  alt="Ica y Huacachina"
+                />
+              </div>
+              <div class="carousel-caption bg-dark bg-opacity-50 rounded-3 p-3">
+                <h5 class="text-light fw-bold fs-4">Ica y Huacachina</h5>
+                <p class="text-light fs-6">
+                  Aventura en el desierto: buggy, sandboard y más. ¡Imperdible!
+                </p>
+                <a href="#destinos" class="btn btn-light btn-sm"
+                  >Descubre Más</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/images/oxapampa.jpeg"
+                  class="d-block w-100 object-fit-cover"
+                  alt="Selva Peruana"
+                />
+              </div>
+              <div class="carousel-caption bg-dark bg-opacity-50 rounded-3 p-3">
+                <h5 class="text-light fw-bold fs-4">Explora oxapampa</h5>
+
+                <a href="#destinos" class="btn btn-light btn-sm"
+                  >Descubre Más</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselDestinos"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-black rounded-circle p-2 shadow"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselDestinos"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-black rounded-circle p-2 shadow"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <section class="py-5 bg-light" id="destinos">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold text-black">¿Porque elegirnos?</h2>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 hover-shadow">
+              <img
+                src="/images/call-8602325_1280.png"
+                class="card-img-top"
+                alt="Machu Picchu"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold text-center mt-1 card-title">
+                  Atencion al cliente 24/7
+                </h5>
+                <p class="card-text">
+                  Estamos para ayudarte con tu viaje las 24 horas del dia
+                </p>
+                <a href="#contacto" class="btn btn-primary w-100"
+                  >Consúltanos aqui</a
+                >
+                <br />
+                <h5 class="text-center">o</h5>
+                <a href="/enviar-reserva.html" class="btn btn-primary w-100"
+                  >Reserva ahora aqui</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 hover-shadow">
+              <img
+                src="/images/guapo-conductor-de-autobus-profesional-volante-sentado-en-la-cabina-en-el-trabajo-vista-frontal-de-sonriente.jpg"
+                class="card-img-top"
+                alt="Ica y Huacachina"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold text-center card-title">
+                  Conductores con experincia
+                </h5>
+                <p class="card-text">
+                  Contamos con conductores con aplica experiencia en manejo de
+                  buses y vans.
+                </p>
+                <a href="/sobre-nosotros.html" class="btn btn-primary w-100"
+                  >Mas información</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 hover-shadow">
+              <img
+                src="/images/busbryco.jpg"
+                class="card-img-top"
+                alt="Bus"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold text-center card-title">
+                  Variedad de vehiculos
+                </h5>
+                <p class="card-text">
+                  Tenemos una amplia variedad de vehiculos de buena caldiad y
+                  con sus revisiones correspondientes
+                </p>
+                <a href="#flota" class="btn btn-primary w-100">Ver flota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Conoce la experiencia VSP Tours</h2>
+        <div class="ratio ratio-16x9">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xlLhUT4hNvs"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p
+          class="fs-6 text-white bg-danger px-3 px-md-4 py-1 py-md-2 rounded-pill fw-bold"
+        >
+          ¡Dale play y prepárate para tu próxima gran aventura!
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+<footer th:replace="~{fragments/layout :: footer}"></footer>

@@ -1,0 +1,23 @@
+body {
+  background-image: url('../images/pexels-billsalazar-17836360.jpg'); /* Renombra tu imagen a 'fondo-login.png' */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
