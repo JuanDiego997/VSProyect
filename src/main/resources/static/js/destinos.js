@@ -1,3 +1,6 @@
+console.log("[DEBUG] destinos.js cargado correctamente");
+
+
 function cargarModal(titulo, descripcion) {
   document.getElementById('modalDestinoLabel').textContent = titulo;
   document.getElementById('modalDestinoContenido').textContent = descripcion;

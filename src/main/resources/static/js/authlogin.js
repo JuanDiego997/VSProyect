@@ -1,3 +1,5 @@
+console.log("[DEBUG] authlogin.js cargado correctamente");
+// 
 document.getElementById('loginForm').addEventListener('submit', function (e) {
   e.preventDefault();
   const email = this.email.value.trim();

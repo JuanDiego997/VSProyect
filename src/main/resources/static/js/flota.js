@@ -1,3 +1,5 @@
+console.log("[DEBUG] flota.js cargado correctamente");
+
 const track = document.querySelector('.carousel-track');
 const items = document.querySelectorAll('.carousel-item');
 const dotsContainer = document.querySelector('.carousel-dots');

@@ -1,3 +1,6 @@
+console.log("[DEBUG] contacto.js cargado correctamente");
+
+
 (function () {
   // Inicializa EmailJS con tu clave pública (ya está correcta)
   emailjs.init('q1_PHTEbMiTgDJdCc');

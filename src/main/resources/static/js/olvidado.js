@@ -1,3 +1,5 @@
+console.log("[DEBUG] olvidado.js cargado correctamente");
+
 document.getElementById('recoverForm').addEventListener('submit', function (e) {
   e.preventDefault();
   const email = this.email.value.trim();

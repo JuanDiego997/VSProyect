@@ -1,3 +1,5 @@
+console.log("[DEBUG] servicios.js cargado correctamente");
+
 const carousels = document.querySelectorAll('.service-image-carousel');
 
 carousels.forEach((carousel) => {

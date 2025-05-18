@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Olvidé mi contraseña</title>
+    <link rel="stylesheet" href="/css/olvidado.css" />
    
   </head>
   <body class="d-flex align-items-center justify-content-center">
@@ -11,7 +12,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
           <div class="mb-4 text-start">
-            <a href="login.html" class="btn btn-outline-light btn-sm">
+            <a href="authlogin" class="btn btn-outline-light btn-sm">
               <i class="bi bi-arrow-left me-1"></i> Volver al login
             </a>
           </div>
@@ -41,7 +42,7 @@
 
             <p class="text-center mt-3">
               ¿Recordaste tu contraseña?
-              <a href="login.html" class="text-decoration-none"
+              <a href="authlogin" class="text-decoration-none"
                 >Iniciar sesión</a
               >
             </p>
@@ -51,7 +52,7 @@
     </div>
 
    
-    
+    <script th:src="@{/js/olvidado.js}" defer></script>
   </body>
  
 </html>

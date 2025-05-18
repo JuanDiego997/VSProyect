@@ -1,3 +1,5 @@
+console.log("[DEBUG] reservar.js cargado correctamente");
+
 lucide.createIcons();
 emailjs.init('c7NApXMmxX3q0Faeh');
 let marker;

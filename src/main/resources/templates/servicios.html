@@ -1,292 +1,285 @@
-<nav th:replace="~{fragments/layout :: nav}"></nav>
-<header class="mt-5 position-relative text-white text-center">
-  <div
-    class="bg-dark bg-opacity-50 position-absolute top-0 start-0 w-100 h-100"
-  ></div>
-  <div
-    class="bg-image"
-    style="
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VSP Tours | Viajes Premium en Perú</title>
+  <meta name="description"
+    content="Agencia de viajes especializada en tours por Perú. Transporte seguro, guías expertos y experiencias únicas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Bootstrap CSS (first) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Common CSS (navbar/footer) -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Page-specific CSS (inicio.css - last) -->
+  <link rel="stylesheet" href="css/servicios.css">
+</head>
+
+<body>
+  <nav th:replace="~{fragments/layout :: nav}"></nav>
+  <header class="mt-5 position-relative text-white text-center">
+    <div class="bg-dark bg-opacity-50 position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="bg-image" style="
       background-image: url('images/Banner\ MercadoShops\ Promoción\ de\ Viajes\ Fotográfico\ Celeste.jpg');
       background-size: cover;
       background-position: center;
       height: 400px;
-    "
-  >
-    <div
-      class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative z-1"
-    >
-      <h1 class="display-4 fw-bold mb-3">
-        <i class="bi bi-bus-front-fill me-2 text-warning"></i>Conoce
-        <span class="text-warning">Nuestros Servicios</span>
-      </h1>
-      <p class="lead fst-italic">
-        Conectamos las principales ciudades del Perú<br />con confort y
-        seguridad garantizada
-      </p>
+    ">
+      <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative z-1">
+        <h1 class="display-4 fw-bold mb-3">
+          <i class="bi bi-bus-front-fill me-2 text-warning"></i>Conoce
+          <span class="text-warning">Nuestros Servicios</span>
+        </h1>
+        <p class="lead fst-italic">
+          Conectamos las principales ciudades del Perú<br />con confort y
+          seguridad garantizada
+        </p>
+      </div>
     </div>
-  </div>
-</header>
-<main class="services-container">
-  <div class="container">
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-image-carousel">
-          <div class="carousel-slides">
-            <div
-              class="slide active"
-              style="
+  </header>
+  <main class="services-container">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-image-carousel">
+            <div class="carousel-slides">
+              <div class="slide active" style="
                 background-image: url('/images/pexels-erick-diaz-veliz-704624766-18630333.jpg');
-              "
-            ></div>
-            <div
-              class="slide"
-              style="background-image: url('/images/huacachinafondo.jpg')"
-            ></div>
+              "></div>
+              <div class="slide" style="background-image: url('/images/huacachinafondo.jpg')"></div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-next">
-              <i class="fas fa-chevron-right"></i>
+          <div class="service-content">
+            <div class="service-icon"><i class="fas fa-bus-alt"></i></div>
+            <h2>Transporte turístico</h2>
+            <p>
+              Recorre los mejores destinos del país en vehículos modernos y
+              seguros, con guías profesionales.
+            </p>
+            <div class="service-features">
+              <p><i class="fas fa-check-circle"></i> Rutas panorámicas</p>
+              <p><i class="fas fa-check-circle"></i> Guías bilingües</p>
+              <p><i class="fas fa-check-circle"></i> Paradas programadas</p>
+            </div>
+            <button class="more-info-btn">
+              Ver más <i class="fas fa-arrow-right"></i>
             </button>
           </div>
         </div>
-        <div class="service-content">
-          <div class="service-icon"><i class="fas fa-bus-alt"></i></div>
-          <h2>Transporte turístico</h2>
-          <p>
-            Recorre los mejores destinos del país en vehículos modernos y
-            seguros, con guías profesionales.
-          </p>
-          <div class="service-features">
-            <p><i class="fas fa-check-circle"></i> Rutas panorámicas</p>
-            <p><i class="fas fa-check-circle"></i> Guías bilingües</p>
-            <p><i class="fas fa-check-circle"></i> Paradas programadas</p>
-          </div>
-          <button class="more-info-btn">
-            Ver más <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
 
-      <div class="service-card">
-        <div class="service-image-carousel">
-          <div class="carousel-slides">
-            <div
-              class="slide active"
-              style="background-image: url('/images/fullday.jpg')"
-            ></div>
-            <div
-              class="slide"
-              style="
+        <div class="service-card">
+          <div class="service-image-carousel">
+            <div class="carousel-slides">
+              <div class="slide active" style="background-image: url('/images/fullday.jpg')"></div>
+              <div class="slide" style="
                 background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-              "
-            ></div>
+              "></div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="service-content">
-          <div class="service-icon"><i class="fas fa-calendar-day"></i></div>
-          <h2>Full Day</h2>
-          <p>
-            Disfruta de un día completo de aventura, cultura o relax en los
-            destinos más increíbles.
-          </p>
-          <div class="service-features">
-            <p><i class="fas fa-check-circle"></i> Salidas diarias</p>
-            <p><i class="fas fa-check-circle"></i> Alimentación incluida</p>
+          <div class="service-content">
+            <div class="service-icon"><i class="fas fa-calendar-day"></i></div>
+            <h2>Full Day</h2>
             <p>
-              <i class="fas fa-check-circle"></i> Entradas a sitios turísticos
+              Disfruta de un día completo de aventura, cultura o relax en los
+              destinos más increíbles.
             </p>
+            <div class="service-features">
+              <p><i class="fas fa-check-circle"></i> Salidas diarias</p>
+              <p><i class="fas fa-check-circle"></i> Alimentación incluida</p>
+              <p>
+                <i class="fas fa-check-circle"></i> Entradas a sitios turísticos
+              </p>
+            </div>
+            <button class="more-info-btn">
+              Reservar <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
-          <button class="more-info-btn">
-            Reservar <i class="fas fa-arrow-right"></i>
-          </button>
         </div>
-      </div>
 
-      <div class="service-card">
-        <div class="service-image-carousel">
-          <div class="carousel-slides">
-            <div
-              class="slide active"
-              style="
+        <div class="service-card">
+          <div class="service-image-carousel">
+            <div class="carousel-slides">
+              <div class="slide active" style="
                 background-image: url('https://images.unsplash.com/photo-1577896851231-70ef18881754');
-              "
-            ></div>
-            <div
-              class="slide"
-              style="
+              "></div>
+              <div class="slide" style="
                 background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
-              "
-            ></div>
+              "></div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="service-content">
-          <div class="service-icon"><i class="fas fa-school"></i></div>
-          <h2>Promociones Escolares</h2>
-          <p>
-            Viajes organizados y seguros para escolares de inicial, primaria y
-            secundaria.
-          </p>
-          <div class="service-features">
-            <p><i class="fas fa-check-circle"></i> Personal capacitado</p>
+          <div class="service-content">
+            <div class="service-icon"><i class="fas fa-school"></i></div>
+            <h2>Promociones Escolares</h2>
             <p>
-              <i class="fas fa-check-circle"></i> Actividades educativas y
-              recreativas
+              Viajes organizados y seguros para escolares de inicial, primaria y
+              secundaria.
             </p>
-            <p><i class="fas fa-check-circle"></i> Supervisión permanente</p>
+            <div class="service-features">
+              <p><i class="fas fa-check-circle"></i> Personal capacitado</p>
+              <p>
+                <i class="fas fa-check-circle"></i> Actividades educativas y
+                recreativas
+              </p>
+              <p><i class="fas fa-check-circle"></i> Supervisión permanente</p>
+            </div>
+            <button class="more-info-btn">
+              Consultar <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
-          <button class="more-info-btn">
-            Consultar <i class="fas fa-arrow-right"></i>
-          </button>
         </div>
-      </div>
-      <div class="service-card">
-        <div class="service-image-carousel">
-          <div class="carousel-slides">
-            <div
-              class="slide active"
-              style="
+        <div class="service-card">
+          <div class="service-image-carousel">
+            <div class="carousel-slides">
+              <div class="slide active" style="
                 background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');
-              "
-            ></div>
-            <div
-              class="slide"
-              style="
+              "></div>
+              <div class="slide" style="
                 background-image: url('https://images.unsplash.com/photo-1611691548024-e2a35fa07dc4');
-              "
-            ></div>
+              "></div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-next">
-              <i class="fas fa-chevron-right"></i>
+          <div class="service-content">
+            <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+            <h2>Transporte Ejecutivo</h2>
+            <p>
+              Un servicio de lujo para ejecutivos que necesitan puntualidad,
+              privacidad y confort.
+            </p>
+            <div class="service-features">
+              <p><i class="fas fa-check-circle"></i> Chofer privado</p>
+              <p><i class="fas fa-check-circle"></i> Vehículos premium</p>
+              <p><i class="fas fa-check-circle"></i> WiFi y agua a bordo</p>
+            </div>
+            <button class="more-info-btn">
+              Agendar <i class="fas fa-arrow-right"></i>
             </button>
           </div>
         </div>
-        <div class="service-content">
-          <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-          <h2>Transporte Ejecutivo</h2>
-          <p>
-            Un servicio de lujo para ejecutivos que necesitan puntualidad,
-            privacidad y confort.
-          </p>
-          <div class="service-features">
-            <p><i class="fas fa-check-circle"></i> Chofer privado</p>
-            <p><i class="fas fa-check-circle"></i> Vehículos premium</p>
-            <p><i class="fas fa-check-circle"></i> WiFi y agua a bordo</p>
-          </div>
-          <button class="more-info-btn">
-            Agendar <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
 
-      <div class="service-card">
-        <div class="service-image-carousel">
-          <div class="carousel-slides">
-            <div
-              class="slide active"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1600118466276-22e8765fc6f0');
-              "
-            ></div>
-            <div
-              class="slide"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1542144582-1ba00456b5a1');
-              "
-            ></div>
+        <div class="service-card">
+          <div class="service-image-carousel">
+            <div class="carousel-slides">
+              <div class="slide active" style="
+                background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');
+              "></div>
+              <div class="slide" style="
+                background-image: url('https://images.unsplash.com/photo-1611691548024-e2a35fa07dc4');
+              "></div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-next">
-              <i class="fas fa-chevron-right"></i>
+          <div class="service-content">
+            <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
+            <h2>Traslados al aeropuerto</h2>
+            <p>
+              Servicio puntual para que llegues o regreses del aeropuerto sin
+              preocupaciones.
+            </p>
+            <div class="service-features">
+              <p><i class="fas fa-check-circle"></i> 24/7 todo el año</p>
+              <p><i class="fas fa-check-circle"></i> Rastreo de vuelos</p>
+              <p><i class="fas fa-check-circle"></i> Atención personalizada</p>
+            </div>
+            <button class="more-info-btn">
+              Solicitar <i class="fas fa-arrow-right"></i>
             </button>
           </div>
         </div>
-        <div class="service-content">
-          <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
-          <h2>Traslados al aeropuerto</h2>
-          <p>
-            Servicio puntual para que llegues o regreses del aeropuerto sin
-            preocupaciones.
-          </p>
-          <div class="service-features">
-            <p><i class="fas fa-check-circle"></i> 24/7 todo el año</p>
-            <p><i class="fas fa-check-circle"></i> Rastreo de vuelos</p>
-            <p><i class="fas fa-check-circle"></i> Atención personalizada</p>
-          </div>
-          <button class="more-info-btn">
-            Solicitar <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
 
-      <div class="service-card">
-        <div class="service-image-carousel">
-          <div class="carousel-slides">
-            <div
-              class="slide active"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1570129477495-217d8f2fc21b');
-              "
-            ></div>
-            <div
-              class="slide"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1505739773434-c4763f34b9f1');
-              "
-            ></div>
+        <div class="service-card">
+          <div class="service-image-carousel">
+            <div class="carousel-slides">
+              <div class="slide active" style="
+                background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');
+              "></div>
+              <div class="slide" style="
+                background-image: url('https://images.unsplash.com/photo-1611691548024-e2a35fa07dc4');
+              "></div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-prev">
-              <i class="fas fa-chevron-left"></i>
+          <div class="service-content">
+            <div class="service-icon"><i class="fas fa-map-marked-alt"></i></div>
+            <h2>Viajes a todo el Perú</h2>
+            <p>
+              Explora cada rincón del país con nuestros recorridos programados y
+              personalizados.
+            </p>
+            <div class="service-features">
+              <p><i class="fas fa-check-circle"></i> Cobertura nacional</p>
+              <p><i class="fas fa-check-circle"></i> Itinerarios flexibles</p>
+              <p><i class="fas fa-check-circle"></i> Atención 24/7</p>
+            </div>
+            <button class="more-info-btn">
+              Explorar <i class="fas fa-arrow-right"></i>
             </button>
-            <button class="carousel-next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
           </div>
-        </div>
-        <div class="service-content">
-          <div class="service-icon"><i class="fas fa-map-marked-alt"></i></div>
-          <h2>Viajes a todo el Perú</h2>
-          <p>
-            Explora cada rincón del país con nuestros recorridos programados y
-            personalizados.
-          </p>
-          <div class="service-features">
-            <p><i class="fas fa-check-circle"></i> Cobertura nacional</p>
-            <p><i class="fas fa-check-circle"></i> Itinerarios flexibles</p>
-            <p><i class="fas fa-check-circle"></i> Atención 24/7</p>
-          </div>
-          <button class="more-info-btn">
-            Explorar <i class="fas fa-arrow-right"></i>
-          </button>
         </div>
       </div>
     </div>
-  </div>
-</main>
-<footer th:replace="~{fragments/layout :: footer}"></footer>
+  </main>
+  <footer th:replace="~{fragments/layout :: footer}"></footer>  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- Tus scripts específicos -->
+  <script th:src="@{/js/servicios.js}" defer></script>
+</body>
+
+</html>
