@@ -1,162 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Registro</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/registro.css" />
-  </head>
 
-  <body class="d-flex align-items-center justify-content-center py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-7 col-lg-5">
-          <div class="mb-4 text-start">
-            <a href="authlogin" class="btn btn-outline-dark btn-sm">
-              <i class="bi bi-arrow-left me-1"></i> Volver al login
-            </a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/registro.css" />
+</head>
 
-          <div class="register-container">
-            <h2 class="text-center mb-4 fw-bold">Crea tu cuenta</h2>
-
-            <form id="registerForm" novalidate>
-              <div class="form-group mb-3">
-                <i class="bi bi-person-fill form-icon"></i>
-                <input
-                  name="name"
-                  type="text"
-                  class="form-control form-control-lg ps-5"
-                  placeholder="Nombre completo"
-                  required
-                />
-              </div>
-              <div class="form-group mb-3">
-                <i class="bi bi-calendar-date-fill form-icon"></i>
-                <input
-                  name="birthdate"
-                  type="date"
-                  class="form-control form-control-lg ps-5"
-                  placeholder="Fecha de nacimiento"
-                  required
-                />
-              </div>
-              <div class="form-group mb-3">
-                <i class="bi bi-envelope-fill form-icon"></i>
-                <input
-                  name="email"
-                  type="email"
-                  class="form-control form-control-lg ps-5"
-                  placeholder="Correo electrónico"
-                  required
-                />
-              </div>
-              <div class="form-group mb-3">
-                <i class="bi bi-telephone-fill form-icon"></i>
-                <input
-                  name="phone"
-                  type="tel"
-                  class="form-control form-control-lg ps-5"
-                  placeholder="Teléfono (Ej: 987654321)"
-                  pattern="^(9\d{8}|01\d{8})$"
-                  title="Debe ser un número válido en Perú (9XXXXXXXX para móviles o 01XXXXXXXX para líneas fijas)"
-                  required
-                />
-              </div>
-              <div class="form-group mb-3">
-                <i class="bi bi-house-door-fill form-icon"></i>
-                <input
-                  name="address"
-                  type="text"
-                  class="form-control form-control-lg ps-5"
-                  placeholder="Dirección"
-                  required
-                />
-              </div>
-              <div class="form-group mb-3">
-                <i class="bi bi-lock-fill form-icon"></i>
-                <input
-                  name="password"
-                  type="password"
-                  class="form-control form-control-lg ps-5"
-                  placeholder="Contraseña"
-                  required
-                />
-              </div>
-              <div class="form-group mb-4">
-                <i class="bi bi-lock-fill form-icon"></i>
-                <input
-                  name="confirm"
-                  type="password"
-                  class="form-control form-control-lg ps-5"
-                  placeholder="Confirmar contraseña"
-                  required
-                />
-              </div>
-
-              <div class="d-grid mb-3">
-                <button type="submit" class="btn btn-success btn-lg">
-                  <i class="bi bi-person-plus-fill me-2"></i> Registrarse
-                </button>
-              </div>
-            </form>
-
-            <p class="text-center mt-3 footer-text">
-              ¿Ya tienes cuenta?
-              <a
-                href="authlogin"
-                class="text-decoration-none fw-semibold text-primary"
-                >Inicia sesión</a
-              >
-            </p>
-          </div>
+<body class="d-flex align-items-center justify-content-center py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-5">
+        <div class="mb-4 text-start">
+          <a href="authlogin" class="btn btn-outline-dark btn-sm">
+            <i class="bi bi-arrow-left me-1"></i> Volver al login
+          </a>
         </div>
-      </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/public/js/registro.js"></script>
-  </body>
-  <div
-    class="modal fade"
-    id="errorModal"
-    tabindex="-1"
-    aria-labelledby="errorModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="errorModalLabel">Error</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <p id="errorMessage"></p>
-          <!-- Aquí se mostrará el mensaje de error -->
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Cerrar
-          </button>
+        <div class="register-container">
+          <h2 class="text-center mb-4 fw-bold">Crea tu cuenta</h2>
+          <!-- Mostrar mensajes flash -->
+          <div th:if="${success}" class="alert alert-success" th:text="${success}"></div>
+          <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
+
+          <form id="registerForm" action="/registro" method="post" novalidate>
+            <!-- Nombre Completo -->
+            <div class="form-group mb-3">
+              <i class="bi bi-person-fill form-icon"></i>
+              <input name="nombre" type="text" class="form-control form-control-lg ps-5" placeholder="Nombre completo"
+                required minlength="3" maxlength="100">
+            </div>
+
+            <!-- Fecha de Nacimiento -->
+            <div class="form-group mb-3">
+              <i class="bi bi-calendar-date-fill form-icon"></i>
+              <input name="fechaNacimiento" type="date" class="form-control form-control-lg ps-5" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group mb-3">
+              <i class="bi bi-envelope-fill form-icon"></i>
+              <input name="email" type="email" class="form-control form-control-lg ps-5"
+                placeholder="Correo electrónico" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form-group mb-3">
+              <i class="bi bi-telephone-fill form-icon"></i>
+              <input name="telefono" type="tel" class="form-control form-control-lg ps-5"
+                placeholder="Teléfono (Ej: 987654321)" required pattern="^(9\d{8}|01\d{8})$"
+                title="Número peruano válido (9 dígitos para móviles, 10 para fijos)">
+            </div>
+
+            <!-- Contraseña -->
+            <div class="form-group mb-3">
+              <i class="bi bi-lock-fill form-icon"></i>
+              <input name="contrasena" type="password" class="form-control form-control-lg ps-5"
+                placeholder="Contraseña" required minlength="8">
+            </div>
+
+            <!-- Confirmar Contraseña -->
+            <div class="form-group mb-4">
+              <i class="bi bi-lock-fill form-icon"></i>
+              <input name="confirmPassword" type="password" class="form-control form-control-lg ps-5"
+                placeholder="Confirmar contraseña" required data-match="contrasena"
+                data-match-error="Las contraseñas no coinciden">
+            </div>
+
+            <!-- Botón de Registro -->
+            <div class="d-grid mb-3">
+              <button type="submit" class="btn btn-success btn-lg">
+                <i class="bi bi-person-plus-fill me-2"></i> Registrarse
+              </button>
+            </div>
+          </form>
+
+
+          <p class="text-center mt-3 footer-text">
+            ¿Ya tienes cuenta?
+            <a href="authlogin" class="text-decoration-none fw-semibold text-primary">Inicia sesión</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/public/js/registro.js"></script>
+</body>
+
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="errorModalLabel">Error</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="errorMessage"></p>
+        <!-- Aquí se mostrará el mensaje de error -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </html>

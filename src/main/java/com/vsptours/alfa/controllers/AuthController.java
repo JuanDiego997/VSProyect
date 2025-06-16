@@ -1,20 +1,21 @@
-// package com.vsptours.alfa.controllers;
+package com.vsptours.alfa.controllers;
 
-// import org.springframework.stereotype.Controller;
-// import org.springframework.web.bind.annotation.GetMapping;
-// import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-// @Controller
-// @RequestMapping("/auth")
-// public class AuthController {
+@Controller
+@RequestMapping("/authlogin")
+public class AuthController {
 
-//     @GetMapping("/login")
-//     public String login() {
-//         return "login";
-//     }
+    @GetMapping
+    public String showLoginPage() {
+        return "authlogin";
+    }
 
-//     @GetMapping("/registro")
-//     public String registro() {
-//         return "registro";
-//     }
-// }
+    @PostMapping
+    public String processLogin() {
+        return "redirect:/intranet";
+    }
+}
